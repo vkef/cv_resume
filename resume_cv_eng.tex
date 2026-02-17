@@ -27,11 +27,49 @@
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+\fontdir[fonts/] % Font folder used by awesome-cv
+
+% Use Space Grotesk as the primary family for this CV.
+\renewfontfamily\headerfont[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  ItalicFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{SpaceGrotesk}
+
+\renewfontfamily\headerfontlight[
+  Path=fonts/,
+  UprightFont=*-Light,
+  ItalicFont=*-Light,
+  BoldFont=*-Medium,
+  BoldItalicFont=*-Medium,
+]{SpaceGrotesk}
+
+\newfontfamily\spacegroteskbody[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  ItalicFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{SpaceGrotesk}
+
+\newfontfamily\spacegroteskbodylight[
+  Path=fonts/,
+  UprightFont=*-Light,
+  ItalicFont=*-Light,
+  BoldFont=*-Medium,
+  BoldItalicFont=*-Medium,
+]{SpaceGrotesk}
+
+\renewcommand*{\footerfont}{\spacegroteskbody}
+\renewcommand*{\bodyfont}{\spacegroteskbody}
+\renewcommand*{\bodyfontlight}{\spacegroteskbodylight}
 
 
 % Color for highlights
-\colorlet{awesome}{awesome-emerald} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
-%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+%\colorlet{awesome}{awesome-emerald} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\definecolor{awesome}{HTML}{2A8A73} % Custom color: #2A8A73
 
 % Colors for text - uncomment and modify
 %\definecolor{darktext}{HTML}{414141}
@@ -47,10 +85,11 @@
 %----------------------------------------------------------------------------------------
 
 \name{Vasileios}{Kefalas}
-\address{Argyroupolis, Athens, Greece}
+\address{Athens, Greece}
 \mobile{(+30) 699-761-1142}
 
-\email{kef.vasileios@outlook.com}
+\email{hello@vasileioskefalas.com}
+\homepage{vasileioskefalas.com}
 \linkedin{kefalasvasileios}
 \github{vkef}
 
